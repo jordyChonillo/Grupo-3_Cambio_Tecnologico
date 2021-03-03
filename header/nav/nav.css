@@ -33,7 +33,7 @@ header{
    
     .flex_rs{
         position: absolute;
-        right: -2000%;
+        visibility: hidden;
     }
 
 }
