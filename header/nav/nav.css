@@ -1,0 +1,153 @@
+header{
+    display: flex;
+    justify-content: center;
+}
+.con_hder{
+    box-shadow: 1px 1px 1px rgb(209, 209, 201);
+    border-left: 1px solid rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 90%;
+    height: 120px;
+
+}
+#btn_menu{
+    display: none;
+}
+.r_menu{
+    padding: 4px;
+    font-size: 30px;
+    display: none;
+}
+.r_menu:hover{
+    cursor: pointer;
+    background-color: rgb(36, 36, 36);
+    color: whitesmoke;
+}
+@media(max-width:1101px){
+   
+    .flex_rs{
+        position: absolute;
+        right: -2000%;
+    }
+
+}
+
+
+@media(max-width:877px){
+    .con_hder{
+        height: 180px;
+        justify-content:center;
+
+    }
+    
+
+}
+@media(max-width:680px){
+    .r_menu{
+        display: block;
+        position: absolute;
+        right: 85%;
+        bottom: 93%;
+    }
+ 
+    .con_hder{
+        height: 100px;
+    }
+    .btn1{
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        right: 100%;
+        transition: all 0.2s;
+        
+    }
+    .flex_list_ul{
+
+        
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex_list_ul li{
+        width: 100%;
+       
+    }
+    .flex_list_ul li a{
+        text-align: center;
+        background-color: black;
+        display: block;
+        border: 1px solid white;
+    }
+    #btn_menu:checked ~ .btn1{
+        display: block;
+        right: 0%;
+        
+    }
+  
+    
+}
+
+
+.logo img{
+    
+    width: 100px;
+    
+}
+.logo i{
+    color: rgb(0, 0, 0);
+}
+
+.flex_list_ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.flex_list_ul li{
+    text-decoration: none;
+}
+
+.flex_list_ul li a {
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(83, 82, 82);
+}
+.flex_list_ul li a:hover{
+    background-color: rgb(245, 245, 245);
+    border-bottom: 1px solid black;
+    color: rgb(134, 216, 2);
+    transition: all 0.7s;
+}
+
+.flex_rs{
+
+    display: flex;
+    
+
+}
+.flex_rs a {
+    border: 2px solid rgb(247, 247, 247);
+    box-shadow: 1px 1px 1px rgb(131, 131, 127);
+    padding: 7px;
+    margin: 3px;
+}
+.flex_rs a:hover{
+    margin-top: 1px;
+    box-shadow: 2px 5px 5px rgb(131, 131, 127);
+    transition: all 0.2s;
+    color: blue;
+}
+
+.flex_rs a i{
+    font-size: 45px;
+
+    color: black;
+    
+
+}
